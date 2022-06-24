@@ -25,8 +25,8 @@
                 @method('PUT')
                 @csrf
                 <div class="form-group">
-                    <label for="image">Image</label>
-                    <input type="file" class="form-control pb-1" name="image" placeholder="Image" value="{{$item->image }}">
+                    <label for="image[]">Image</label>
+                    <input type="file" class="form-control pb-1" name="image[]" placeholder="Image" value="{{$item->image}}">
                 </div>
                 <div class="form-group ">
                     <label for="title">Title</label>

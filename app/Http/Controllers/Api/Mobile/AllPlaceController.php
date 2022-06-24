@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Helpers\ResponseFormatter;
 
-class PlaceController extends Controller
+class AllPlaceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,7 +19,7 @@ class PlaceController extends Controller
     public function index(Request $request)
     {
         $id = $request->input('id');
-        $limit = $request->input('limit', 6);
+        $limit = $request->input('limit', 10);
         $title = $request->input('title');
         $title1 = $request->input('title1');
         $slug = Str::slug($request->name, '-');
@@ -30,8 +30,6 @@ class PlaceController extends Controller
         $office_hours = $request->input('office_hours');
         $address = $request->input('address');
         $address1 = $request->input('address1');
-        $longitude = $request->input('longitude');
-        $latitude = $request->input('latitude');
         $location = $request->input('location');
         $category = $request->input('category');
 
@@ -86,14 +84,6 @@ class PlaceController extends Controller
 
         if($address1)
             $places->where('address1', 'like', '%' . $address1 . '%');
-
-        if($latitude)
-            $places->where('latitude', 'like', '%' . $latitude . '%');
-
-        if($longitude)
-            $places->where('longitude', 'like', '%' . $longitude . '%');
-
-        
 
         if($location)
             $places->where('location', 'like', '%' . $location . '%');

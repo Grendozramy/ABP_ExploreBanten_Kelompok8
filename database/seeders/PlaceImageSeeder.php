@@ -18,37 +18,37 @@ class PlaceImageSeeder extends Seeder
     {
         PlaceImage::create([
             'place_id' => '1',
-            'image' => 'A1dREDToottZ1TbLfFWPbYtVJhduWZsdLzMJ9h5R.jpg',
+            'image' => '13y0RhjZTWkun01iwvWrVrIfCe9AODAa4Vui65WX.jpg',
             'created_at' => Carbon::now()->toDateTimeString(),     
         ]);
 
         PlaceImage::create([
             'place_id' => '2',
-            'image' => 'FooDgqgGwreukIDJhiqancJDY9witD9jvUs8UgMP.jpg',
+            'image' => 'aWJWp4FDeQdiyzCiWfS22CnQ0967llsXhRA36h0N.jpg',
             'created_at' => Carbon::now()->toDateTimeString(),     
         ]);
 
         PlaceImage::create([
             'place_id' => '3',
-            'image' => 'Myb5U1sHWYbgHB2FxIC8N2siVteD4f4xeusoZyG3.jpg',
+            'image' => 'Hmmw69Twnjj4du77JGUsSDe4sPlwXjnGrHSXhzoq.jpg',
             'created_at' => Carbon::now()->toDateTimeString(),     
         ]);
 
         PlaceImage::create([
             'place_id' => '4',
-            'image' => 'r47d30MlaeNGAFefCWXZTgSTIMfFPXFXvnFAksBj.webp',
+            'image' => 'jlQo9j7u6tE9vtBNRmzNmL4BiDw1Xu5IRz9ZKp3F.png',
             'created_at' => Carbon::now()->toDateTimeString(),     
         ]);
 
         PlaceImage::create([
             'place_id' => '5',
-            'image' => 'XHfZySsFeBiook34PlNOS2leVKBubEVvnWlwyItF.jpg',
+            'image' => 'Resep_Masakan_Sate_Bandeng_(Banten).jpg',
             'created_at' => Carbon::now()->toDateTimeString(),     
         ]);
 
         PlaceImage::create([
             'place_id' => '6',
-            'image' => 'sT3GGEswPlqqS1k6mAJ9UX1LQFIDpYrVpZebmkLb.jpg',
+            'image' => 'Kasepuhan-Cisungsang-1024x576.jpg',
             'created_at' => Carbon::now()->toDateTimeString(),     
         ]);
     }

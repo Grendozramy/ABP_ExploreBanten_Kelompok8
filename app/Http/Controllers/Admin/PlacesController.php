@@ -22,7 +22,7 @@ class PlacesController extends Controller
     public function index()
     {
         $places = Place::with('category')->get();
-        $places = Place::latest()->paginate(5);
+        $places = Place::latest()->paginate(10);
       
         return view('pages.admin.place.index',compact('places'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
@@ -50,6 +50,7 @@ class PlacesController extends Controller
         //create place
         $place = Place::create([
             'title'         => $request->title,
+            'title1'         => $request->title1,
             'slug'          => Str::slug($request->title, '-'),
             'user_id'       => auth()->user()->id,
             'category_id'   => $request->category_id,
@@ -59,6 +60,7 @@ class PlacesController extends Controller
             'website'       => $request->website,
             'office_hours'  => $request->office_hours,
             'address'       => $request->address,
+            'address1'       => $request->address1,
             'latitude'      => $request->latitude,
             'longitude'     => $request->longitude,
             'location'     =>  $request->location,
@@ -124,12 +126,14 @@ class PlacesController extends Controller
         // Rule::unique('places')->withoutTrashed()
         $request->validate([
             'title'     => 'required', Rule::unique('places,title')->withoutTrashed(),
+            'title1'     => 'required', Rule::unique('places,title1')->withoutTrashed(),
             'category_id'   => 'required',
             'description'   => 'required',
             'phone'         => 'required',
             'website'       => 'required',
             'office_hours'  => 'required',
             'address'       => 'required',
+            'address1'       => 'required',
             'latitude'      => 'required',
             'longitude'     => 'required',
             'location'     =>  'required',
@@ -138,6 +142,7 @@ class PlacesController extends Controller
         //update place
         $place->update([
             'title'         => $request->title,
+            'title1'         => $request->title1,
             'slug'          => Str::slug($request->title, '-'),
             'user_id'       => auth()->user()->id,
             'category_id'   => $request->category_id,
@@ -147,6 +152,7 @@ class PlacesController extends Controller
             'website'       => $request->website,
             'office_hours'  => $request->office_hours,
             'address'       => $request->address,
+            'address1'       => $request->address1,
             'latitude'      => $request->latitude,
             'longitude'     => $request->longitude,
             'location'     =>  $request->location,
@@ -165,7 +171,7 @@ class PlacesController extends Controller
                 $image->storeAs('public/places', $image->hashName());
 
                 //insert database
-                $place->images()->create([
+                $place->images()->update([
                     'image'     => $image->hashName(),
                     'place_id'  => $place->id
                 ]);

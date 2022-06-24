@@ -9,9 +9,10 @@
             <div class="carousel-inner">
                 @php $i=1; @endphp
                 @foreach ($sliders as $item)
+                @foreach ($item->images as $item2)
                 <div class="carousel-item {{ $i=='1' ? 'active':'' }}">
                     @php $i++; @endphp
-                    <img class="w-100" width="1200" height="720" src="{{ $item->image }}" alt="Image">
+                    <img class="w-100" width="1200" height="720" src="{{ $item2->image }}" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-4 animated slideInDown">{{ $item->title }}</h4>
@@ -21,6 +22,8 @@
                         </div>
                     </div>
                 </div>
+                @endforeach
+                
                 @endforeach
             <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>

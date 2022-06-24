@@ -18,6 +18,7 @@ class PlaceSeeder extends Seeder
     {
         Place::create([
             'title' => 'Gunung Luhur, Negeri di Atas Awan',
+            'title1' => 'Gunung Luhur',
             'slug' => 'gunung-luhur-negeri-di-atas-awan',
             'user_id' => '1',
             'category_id' => '1',
@@ -38,6 +39,7 @@ class PlaceSeeder extends Seeder
             'website' => '-',
             'office_hours' => '07.00- 18.00 WIB',
             'address' => 'Citorek Kidul, Kec. Cibeber, Kabupaten Lebak, Banten',
+            'address1' => 'Citorek Kidul, Kec. Cibeber',
             'longitude' => '106.31679010660574',
             'latitude' => '-6.757999285216089',
             'location' => '-6.757999285216089,106.31679010660574',
@@ -46,16 +48,20 @@ class PlaceSeeder extends Seeder
 
         Place::create([
             'title' => 'Mengenal Suku Baduy, suku asli dari Provinsi Banten',
+            'title1' => 'Suku Baduy',
             'slug' => 'mengenal-suku-baduy-suku-asli-dari-provinsi-banten',
             'user_id' => '1',
             'category_id' => '2',
             'excerpt' => '<div>Indonesia adalah negara yang kaya akan sumber daya alam dan beraneka ragam budaya di dalamnya. 
                     Hal ini dibuktikan dengan banyaknya suku dan buday...',
-            'description' => '<div>Indonesia adalah negara yang kaya akan sumber daya alam dan beraneka ragam budaya di dalamnya. Hal ini dibuktikan dengan banyaknya suku dan budaya serta alam yang tidak bosan-bosannya untuk dijelajahi. Kekayaan alam dan budaya inilah yang membuat banyak orang senang mengunjungi Indonesia.<br><br></div><div>Salah satu wilayah yang memiliki potensi alam dan budaya yang menarik dan layak untuk dijelajahi adalah Provinsi Banten. Selain memiliki kekayaan berupa sumber daya alam yang indah seperti pantai, gunung, dan perbukitan, Banten juga terkenal dengan suku <a href=\"http://wisatabanten.com/\">khasnya Baduy</a>. Hampir setiap orang di Indonesia mengetahui Suku Baduy yang terletak di Banten ini. Bahkan tidak sedikit wisatawan domestik yang melakukan perjalanan untuk menjelajahi suku tersebut.<br><br></div>',
+            'description' => '<div>Indonesia adalah negara yang kaya akan sumber daya alam dan beraneka ragam budaya di dalamnya. 
+            Hal ini dibuktikan dengan banyaknya suku dan budaya serta alam yang tidak bosan-bosannya untuk dijelajahi. 
+            Kekayaan alam dan budaya inilah yang membuat banyak orang senang mengunjungi Indonesia.<br><br></div><div>Salah satu wilayah yang memiliki potensi alam dan budaya yang menarik dan layak untuk dijelajahi adalah Provinsi Banten. Selain memiliki kekayaan berupa sumber daya alam yang indah seperti pantai, gunung, dan perbukitan, Banten juga terkenal dengan suku <a href=\"http://wisatabanten.com/\">khasnya Baduy</a>. Hampir setiap orang di Indonesia mengetahui Suku Baduy yang terletak di Banten ini. Bahkan tidak sedikit wisatawan domestik yang melakukan perjalanan untuk menjelajahi suku tersebut.<br><br></div>',
             'phone' => '085717928250',
             'website' => '-',
             'office_hours' => '-',
             'address' => 'Kadujangkung, Bojong Menteng, Kec. Leuwidamar, Kabupaten Lebak, Banten 42362',
+            'address1' => 'Kadujangkung, Kec. Leuwidamar',
             'longitude' => '106.23614500862217',
             'latitude' => '-6.59453929438753',
             'location' => '-6.59453929438753,106.23614500862217',
@@ -64,15 +70,18 @@ class PlaceSeeder extends Seeder
 
         Place::create([
             'title' => 'Sate Bebek Paling Dicari di Cilegon, Sate Dengan Rasa Nikmat dan Empuk!',
+            'title1' => 'Sate Bebek Cilegon',
             'slug' => 'sate-bebek-paling-dicari-di-cilegon-sate-dengan-rasa-nikmat-dan-empuk',
             'user_id' => '1',
             'category_id' => '3',
             'excerpt' => '<div>Masih satu sate, yakni sate bebek yang sangat terkenal di kawasan Cibeber, Kota Cilegon., Sate Bebek Cindelaras. Rumah makan sate bebek yang suda...',
-            'description' => '<div>Masih satu sate, yakni sate bebek yang sangat terkenal di kawasan Cibeber, Kota Cilegon., Sate Bebek Cindelaras. Rumah makan sate bebek yang sudah ada sejak tiga puluh tahun silam ini sudah tidak diragukan lagi kelezatannya.<br><br></div><div>Meski bebek dikenal akan bau amisnya, tetapi sate disini sama sekali tidak berbau amis. Pengolahan yang tepat dan bumbu resep turun temurun yang dijaga keasliannya adalah kunci sate bebek ini tetap diburu pelanggannya.<br><br></div><div>Sate bebek yang empuk, menjadikan cocok wisata kuliner di kota Serang dan Banten.</div>',
+            'description' => '<div>Masih satu sate, yakni sate bebek yang sangat terkenal di kawasan Cibeber, Kota Cilegon., Sate Bebek Cindelaras. 
+            Rumah makan sate bebek yang sudah ada sejak tiga puluh tahun silam ini sudah tidak diragukan lagi kelezatannya.<br><br></div><div>Meski bebek dikenal akan bau amisnya, tetapi sate disini sama sekali tidak berbau amis. Pengolahan yang tepat dan bumbu resep turun temurun yang dijaga keasliannya adalah kunci sate bebek ini tetap diburu pelanggannya.<br><br></div><div>Sate bebek yang empuk, menjadikan cocok wisata kuliner di kota Serang dan Banten.</div>',
             'phone' => '0877-7184-4294',
             'website' => '-',
             'office_hours' => '12.00- 22.00 WIB',
             'address' => 'Jl. Raya H. Mambruk, RT. 01/02, Cibeber, Kecamatan Cibeber, Cibeber, Kec. Cibeber, Kota Cilegon, Banten 42423',
+            'address1' => 'Jl. Raya H. Mambruk, Kota Cilegon',
             'longitude' => '106.07545267103515',
             'latitude' => '-6.03852320593975',
             'location' => '-6.03852320593975,106.07545267103515',
@@ -81,6 +90,7 @@ class PlaceSeeder extends Seeder
 
         Place::create([
             'title' => 'Tanjung Lesung yang Indah dan Mempesona',
+            'title1' => 'Tanjung Lesung',
             'slug' => 'tanjung-lesung-yang-indah-dan-mempesona',
             'user_id' => '1',
             'category_id' => '1',
@@ -90,6 +100,7 @@ class PlaceSeeder extends Seeder
             'website' => 'https://www.tanjunglesung.com/',
             'office_hours' => '07.00- 20.00 WIB',
             'address' => 'Pantai Tj. Lesung, Banten',
+            'address1' => 'Pantai Tj. Lesung, Banten',
             'longitude' => '105.65850446088325',
             'latitude' => '-6.4808550223056125',
             'location' => '-6.4808550223056125,105.65850446088325',
@@ -98,6 +109,7 @@ class PlaceSeeder extends Seeder
 
         Place::create([
             'title' => 'Makanan Khas Banten Sate Bandeng',
+            'title1' => 'Sate Bandeng',
             'slug' => 'makanan-khas-banten-sate-bandeng',
             'user_id' => '1',
             'category_id' => '3',
@@ -107,6 +119,7 @@ class PlaceSeeder extends Seeder
             'website' => 'http://www.satebandengibuamenahkhasbanten.blogspot.com/',
             'office_hours' => '07.00- 22.00 WIB',
             'address' => 'Jl. Sayabulu km 1, Lingk No.11, RT.2/RW.1, Dalung, Kec. Cipocok Jaya, Kota Serang, Banten 42127',
+            'address1' => 'Jl. Sayabulu km 1, Kec. Cipocok Jaya',
             'longitude' => '106.1484829272488',
             'latitude' => '-6.134825356109146',
             'location' => '-6.134825356109146,106.1484829272488',
@@ -115,6 +128,7 @@ class PlaceSeeder extends Seeder
 
         Place::create([
             'title' => 'Seren Taun Kasepuhan Cisungsang',
+            'title1' => 'Seren Taun Kasepuhan Cisungsang',
             'slug' => 'seren-taun-kasepuhan-cisungsang',
             'user_id' => '1',
             'category_id' => '2',
@@ -124,6 +138,7 @@ class PlaceSeeder extends Seeder
             'website' => '-',
             'office_hours' => '-',
             'address' => 'Cisungsang, Kabupaten Lebak, Banten',
+            'address1' => 'Cisungsang, Kabupaten Lebak, Banten',
             'longitude' => '106.42227743114297',
             'latitude' => '-6.800603916612707',
             'location' => '-6.800603916612707,106.42227743114297',

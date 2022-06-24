@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('places', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->string('title1');
             $table->string('slug');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('category_id');
@@ -25,8 +26,9 @@ return new class extends Migration
             $table->string('website');
             $table->string('office_hours');
             $table->text('address');
-            $table->string('longitude');
-            $table->string('latitude');
+            $table->string('address1');
+            $table->double('longitude');
+            $table->double('latitude');
             $table->timestamps();
 
             //relationship category

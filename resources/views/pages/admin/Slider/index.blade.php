@@ -32,10 +32,11 @@
 
                 <tbody>
                     @forelse ($sliders as $item)
+                    @foreach ($item->images as $item2)
                     <tr>
                         <td>{{ ++$i }}</td>
                         <td>
-                            <img src="{{ url($item->image)}}" alt="" style="width: 200px" class="img-thumbnail">
+                            <img src="{{ url($item2->image)}}" alt="" style="width: 200px" class="img-thumbnail">
                         </td>
                         <td>
                             <a href="{{ route('slider.edit', $item->id) }}" class="btn btn-info">
@@ -49,7 +50,9 @@
                                 </button>
                             </form>
                         </td>
-                    </tr>
+                    </tr> 
+                    @endforeach
+                    
                     @empty
                     <tr>
                         <td colspan="4" class="text-center">

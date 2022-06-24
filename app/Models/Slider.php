@@ -16,22 +16,11 @@ class Slider extends Model
      * @var array
      */
     protected $fillable = [
-         'user_id', 'image', 'title', 'title2',
+         'user_id', 'title', 'title2',
      ];
 
-     /**
-     * getImageAttribute
-     *
-     * @param  mixed $image
-     * @return void
-     */
-    public function getImageAttribute($image)
+    public function images()
     {
-        return asset('storage/sliders/' . $image);
+        return $this->hasMany(SliderImage::class, 'slider_id', 'id');
     }
-
-    // public function places()
-    // {
-    //     return $this->belongsTo(Place::class);
-    // }
 }

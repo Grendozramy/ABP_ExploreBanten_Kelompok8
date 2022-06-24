@@ -32,6 +32,11 @@
                         <input type="text" class="form-control" name="title" placeholder="Masukan Judul"
                             value="{{ old('title') }}">
                     </div>
+                    <div class="form-group ">
+                        <label for="title1">Judul Kecil</label>
+                        <input type="text" class="form-control" name="title1" placeholder="Masukan Judul Kecil"
+                            value="{{ old('title1') }}">
+                    </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -79,6 +84,11 @@
                         <label for="address">Alamat</label>
                         <textarea class="form-control" id="address" name="address" rows="3" placeholder="Masukan Alamat"
                             value="{{ old('address') }}"></textarea>
+                    </div>
+                    <div class="form-group ">
+                        <label for="address1">Alamat Kecil</label>
+                        <input type="text" class="form-control" name="address1" placeholder="Masukan Alamat Kecil"
+                            value="{{ old('address1') }}">
                     </div>
                     <div class="row">
                         <div class="col-md-6">

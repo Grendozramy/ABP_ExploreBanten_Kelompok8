@@ -25,12 +25,16 @@
                 @method('PUT')
                 @csrf
                 <div class="form-group">
-                    <label for="image">Image</label>
-                    <input type="file" class="form-control pb-1" name="image" placeholder="Image" value="{{$item->image }}">
+                    <label for="image[]">Image</label>
+                    <input type="file" class="form-control pb-1" name="image[]" placeholder="Image" value="{{$item->image }}">
                 </div>
                 <div class="form-group ">
                     <label for="title">Judul</label>
                     <input type="text" class="form-control" name="title" placeholder="Masukan Judul" value="{{ $item->title}}">
+                </div>
+                <div class="form-group ">
+                    <label for="title1">Judul Kecil</label>
+                    <input type="text" class="form-control" name="title1" placeholder="Masukan Judul Kecil" value="{{ $item->title1}}">
                 </div>
                 <div class="row">
                     <div class="col-md-6">
@@ -76,6 +80,10 @@
                 <div class="form-group">
                     <label for="address">Alamat</label>
                     <textarea class="form-control" id="address" name="address" rows="3" placeholder="Masukan Alamat">{{ $item->address }}</textarea>
+                </div>
+                <div class="form-group ">
+                    <label for="address1">Alamat Kecil</label>
+                    <input type="text" class="form-control" name="address1" placeholder="Masukan Alamat Kecil" value="{{ $item->address1}}">
                 </div>
                 <div class="row">
                     <div class="col-md-6">

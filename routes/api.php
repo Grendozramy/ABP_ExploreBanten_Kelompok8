@@ -43,20 +43,20 @@ Route::prefix('admin')->group(function () {
 Route::prefix('mobile')->group(function () {
 
     //route categories index
-    Route::get('/categories', [App\Http\Controllers\Api\Mobile\CategoryController::class, 'index', ['as' => 'web']]);
+    Route::get('/categories', [App\Http\Controllers\Api\Mobile\CategoryController::class, 'index']);
 
     //route categories show
-    Route::get('/categories/{slug?}', [App\Http\Controllers\Api\Mobile\CategoryController::class, 'show', ['as' => 'web']]);
+    Route::get('/categories/{slug?}', [App\Http\Controllers\Api\Mobile\CategoryController::class, 'show']);
 
     //route places index
-    Route::get('/places', [App\Http\Controllers\Api\Mobile\PlaceController::class, 'index', ['as' => 'web']]);
+    Route::get('/places', [App\Http\Controllers\Api\Mobile\PlaceController::class, 'index']);
 
     //route places show
-    Route::get('/places/{slug?}', [App\Http\Controllers\Api\Mobile\PlaceController::class, 'show', ['as' => 'web']]);
+    Route::get('/places/{slug?}', [App\Http\Controllers\Api\Mobile\PlaceController::class, 'show']);
 
     //route all places index
-    Route::get('/all_places', [App\Http\Controllers\Api\Mobile\PlaceController::class, 'all_places', ['as' => 'web']]);
+    Route::get('/all_places', [App\Http\Controllers\Api\Mobile\AllPlaceController::class, 'index']);
 
     //route sliders
-    Route::get('/sliders', [App\Http\Controllers\Api\Mobile\SliderController::class, 'index', ['as' => 'web']]);
+    Route::get('/sliders', [App\Http\Controllers\Api\Mobile\SliderController::class, 'index']);
 });

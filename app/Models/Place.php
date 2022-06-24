@@ -15,7 +15,7 @@ class Place extends Model
      * @var array
      */
     protected $fillable = [
-        'title', 'slug', 'user_id', 'category_id', 'excerpt','description', 'phone', 'website', 'office_hours', 'address', 'longitude','latitude', 'location'
+        'title', 'title1', 'slug', 'user_id', 'category_id', 'excerpt','description', 'phone', 'website', 'office_hours', 'address', 'address1', 'longitude','latitude', 'location' 
     ];
 
     /**
@@ -35,7 +35,7 @@ class Place extends Model
      */
     public function category()
     {
-        return $this->belongsTo(Category::class);
+        return $this->belongsTo(Category::class, 'category_id', 'id');
     }
 
     /**
@@ -45,7 +45,7 @@ class Place extends Model
      */
     public function images()
     {
-        return $this->hasMany(PlaceImage::class);
+        return $this->hasMany(PlaceImage::class, 'place_id', 'id');
     }
 
     // public function sliders()

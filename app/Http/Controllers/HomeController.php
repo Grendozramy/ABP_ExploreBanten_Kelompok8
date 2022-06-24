@@ -11,7 +11,7 @@ class HomeController extends Controller
 {
     public function index() 
     {
-        $sliders = Slider::all();
+        $sliders = Slider::with('images')->latest()->get();
         $places = Place::with('category', 'images')->latest()->get();
         $places = Place::latest()->paginate(3);
         $places1 = Place::all();
